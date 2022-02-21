@@ -12,6 +12,8 @@ jobs:
         run: npm install
       - name: Build packages
         run: make packages
+      - name: Testing
+        run: ls builds/ | grep zip
       - name: Browser Plugin Publish
         uses: plasmo-corp/bpp@v0.0.0
         with:
